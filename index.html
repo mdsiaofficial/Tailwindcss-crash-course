@@ -15,26 +15,52 @@
     <!-- navbar -->
     <!-- <nav class="relative container mx-auto p-6 ">hello world</nav> -->
     <!-- flex container -->
-    <nav class="relative container mx-auto p-5 bg- border-2 border-orange-600 rounded-md m-2 flex item-center justify-between">
+    <nav class="relative container mx-auto p-4 bg-darkBlue border-3 border-orange-600 rounded-md m-2 flex item-center justify-between">
         <!-- logo -->
         <div class="flex items-center justify-center">
-            <div class="flex">
+            <div class="flex space-x-3">
                 <img src="./images/CPCCU_Final.png" class="h-10 w-10" alt="logo">
+                <h1 class="hidden md:flex items-center justify-center text-white font-serif text-2xl font-bold hover:text-orange-500 cursor-pointer md:text-lg">   CPCCU   </h1>
             </div>
         </div>
 
         <!-- menu item -->
-        <div class="hidden md:flex items-center justify-center space-x-6 px-20">
-            <a href="#" class="hover:text-orange-600 font-bold">Pricing</a>
-            <a href="#" class="hover:text-orange-600 font-bold">Product</a>
-            <a href="#" class="hover:text-orange-600 font-bold">About Us</a>
-            <a href="#" class="hover:text-orange-600 font-bold">Careers</a>
-            <a href="#" class="hover:text-orange-600 font-bold">Contact</a>
-            <a href="#" class="hover:text-orange-600 font-bold">Community</a>
+        <div class="hidden items-center justify-center text-white space-x-6 px-20 md:flex md:text-sm md:font-normal">
+            <!-- <a href="#" class="hover:text-orange-600 font-bold">Pricing</a> -->
+            <a href="#" class="hover:text-orange-600">Roadmaps</a>
+            <a href="#" class="hover:text-orange-600">About Us</a>
+            <a href="#" class="hover:text-orange-600">Careers</a>
+            <a href="#" class="hover:text-orange-600">Contact</a>
+            <a href="#" class="hover:text-orange-600">Community</a>
         </div>
 
-        <a href="#" class="flex items-center justify-center bg-orange-500 p-3 px-6 rounded-full font-bold hover:text-white">Get Started</a>
+        <a href="#" class="flex items-center justify-center bg-orange-500 px-4 rounded-full baseline font-bold hover:text-white md:font-normal">Get Started</a>
     </nav>
+
+    <!-- hero sec -->
+    <section class="" id="hero">
+        <!-- flex container -->
+        <div class="container flex flex-col-reverse items-center px-4 mx-auto mt-10 space-y-0 md:space-y-0 md:flex-row">
+
+            <!-- left   -->
+            <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+                <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left">Join the journey of programming, learn & grow with us!</h1>
+                <p class="max-w-md text-lg text-center text-darkGrayishBlue md:text-left">Are you passionate about coding and want to learn new things? Do you want to collaborate with like-minded people and grow your skills? Join our programming club and be a part of a community that values knowledge and friendship.</p>
+                <div class="flex justify-center md:justify-start">
+                    <a href="#" class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-orange-500 md:block">Sign Up!</a>
+                </div>
+            </div>
+
+            <!-- image -->
+            <div class="md:w-1/2">
+                <img src="./images/hero-image.jpg" alt="" class="rounded-3xl">
+            </div>
+        </div
+    </section>
+
+    <section id="features">
+
+    </section>
 
 </body>
 </html>

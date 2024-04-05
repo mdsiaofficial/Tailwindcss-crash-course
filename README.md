@@ -23,19 +23,19 @@
 
 
 <!-- 
-npm init -y
+npm init -y ✅
 
-npm install -D tailwindcss
+npm install -D tailwindcss ✅
 npm install -D tailwindcss vite
 
-npx tailwindcss init
+npx tailwindcss init ✅
 npx tailwindcss init -p
-here -p for generating css codes only what is used.
+here -p for generating css codes only what is used (postCSS).
 
 
 tailwind.config.js
 @type {import('tailwindcss').Config}
-
+✅
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
@@ -46,15 +46,15 @@ module.exports = {
 
 
 src/input.css
-
+✅
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-npx tailwindcss -i ./input.css -o ./output.css --watch
+npx tailwindcss -i ./input.css -o ./output.css --watch ✅
 
 
-npm run dev
+npm run dev ✅
 
  -->
 
