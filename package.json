@@ -1,11 +1,11 @@
 {
   "name": "tailwindcss-crash-course",
   "version": "1.0.0",
-  "description": "",
+  "description": "1. **What does this project do? Is it something like a website, app, library, or command tool?**    - This project appears to be a Tailwind CSS crash course. Tailwind CSS is a utility-first CSS framework for quickly building custom designs.",
   "main": "index.js",
+  
   "scripts": {
-    "build": "tailwindcss -i ./src/input.css -o ./output/output.css",
-    "watch": "tailwindcss -i ./src/input.css -o ./output/output.css --watch"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
