@@ -632,6 +632,10 @@ video {
   top: 1rem;
 }
 
+.right-10 {
+  right: 2.5rem;
+}
+
 .m-1 {
   margin: 0.25rem;
 }
