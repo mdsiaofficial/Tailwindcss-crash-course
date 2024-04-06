@@ -620,12 +620,12 @@ video {
   right: 0px;
 }
 
-.right-6 {
-  right: 1.5rem;
-}
-
 .right-4 {
   right: 1rem;
+}
+
+.right-6 {
+  right: 1.5rem;
 }
 
 .top-4 {
@@ -664,6 +664,11 @@ video {
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .-mr-4 {
@@ -792,6 +797,42 @@ video {
 
 .w-auto {
   width: auto;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-1\/4 {
+  width: 25%;
+}
+
+.w-2\/5 {
+  width: 40%;
+}
+
+.w-4\/6 {
+  width: 66.666667%;
+}
+
+.w-4 {
+  width: 1rem;
+}
+
+.w-8\/12 {
+  width: 66.666667%;
+}
+
+.w-11\/12 {
+  width: 91.666667%;
+}
+
+.w-11 {
+  width: 2.75rem;
+}
+
+.w-10\/12 {
+  width: 83.333333%;
 }
 
 .max-w-6xl {
@@ -956,6 +997,12 @@ video {
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
+.space-y-10 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
+}
+
 .self-end {
   align-self: flex-end;
 }
@@ -1092,6 +1139,11 @@ video {
   background-color: hsl(228 39% 23% / var(--tw-bg-opacity));
 }
 
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
 .bg-orange-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(249 115 22 / var(--tw-bg-opacity));
@@ -1138,6 +1190,14 @@ video {
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.p-0 {
+  padding: 0px;
+}
+
+.p-1 {
+  padding: 0.25rem;
 }
 
 .px-20 {
@@ -1208,6 +1268,11 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .pt-2 {
@@ -1376,7 +1441,7 @@ video {
 }
 
 body{
-  background-image: url("./images/assets/bgbg.jpg");
+  background-image: url("");
   background-repeat: no-repeat;
   background-size: 800px;
   background-position: 90% -25%;
@@ -1471,6 +1536,10 @@ body{
 }
 
 @media (min-width: 768px) {
+  .md\:m-4 {
+    margin: 1rem;
+  }
+
   .md\:mb-4 {
     margin-bottom: 1rem;
   }
@@ -1533,6 +1602,22 @@ body{
     background-color: transparent;
   }
 
+  .md\:p-0 {
+    padding: 0px;
+  }
+
+  .md\:p-1 {
+    padding: 0.25rem;
+  }
+
+  .md\:p-3 {
+    padding: 0.75rem;
+  }
+
+  .md\:p-4 {
+    padding: 1rem;
+  }
+
   .md\:py-12 {
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -1546,6 +1631,11 @@ body{
   .md\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+
+  .md\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .md\:text-left {
