@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,48 +10,58 @@
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 
 </head>
+
 <body>
-    
+
 
     <!-- navbar -->
-    <!-- flex container -->
-    <nav class="relative container mx-auto p-4 bg-darkBlue border-3 border-orange-600 rounded-md m-2 flex item-center justify-between">
-        <!-- logo -->
-        <div class="flex items-center justify-center">
+    <nav
+        class="relative container mx-auto p-4 bg-darkBlue border-orange-600 rounded-md m-2 flex item-center justify-between">
+
+        <!-- flex container -->
+        <div class="flex items-center justify-between">
+            
+            <!-- logo -->
             <div class="flex space-x-3">
                 <img src="./images/logos/cpccu.png" class="h-10 w-10" alt="logo">
-                <h1 class="hidden md:flex items-center justify-center text-white font-serif text-2xl font-bold hover:text-orange-500 cursor-pointer md:text-lg">   CPCCU   </h1>
+                <h1
+                    class="hidden md:flex items-center justify-center text-white font-serif text-2xl font-bold hover:text-orange-500 cursor-pointer md:text-lg">
+                    CPCCU </h1>
+            </div>
+
+            <!-- menu item -->
+            <div class="hidden items-center justify-center text-white space-x-6 px-20 md:flex md:text-sm md:font-normal">
+                <a href="#" class="hover:text-orange-600">Roadmaps</a>
+                <a href="#" class="hover:text-orange-600">About Us</a>
+                <a href="#" class="hover:text-orange-600">Careers</a>
+                <a href="#" class="hover:text-orange-600">Contact</a>
+                <a href="#" class="hover:text-orange-600">Community</a>
+            </div>
+
+            <!-- button get -->
+            <a href="#"
+                class="items-center justify-center bg-brightRed px-4 rounded-full baseline font-bold hover:text-white hidden md:flex md:font-normal">Get Started
+            </a>
+            
+            <!--hamburger menu list -->
+            <button id="menu-btn" class="hamburger justify-center items-center md:hidden self-end focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+
+        <!-- mobile menu -->
+        <div class="md:hidden">
+            <div id="menu" class="absolute hidden flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shahow-md">
+                <a href="#" class="hover:text-orange-600">Roadmaps</a>
+                <a href="#" class="hover:text-orange-600">About Us</a>
+                <a href="#" class="hover:text-orange-600">Careers</a>
+                <a href="#" class="hover:text-orange-600">Contact</a>
+                <a href="#" class="hover:text-orange-600">Community</a>
             </div>
         </div>
 
-        <!-- menu item -->
-        <div class="hidden items-center justify-center text-white space-x-6 px-20 md:flex md:text-sm md:font-normal">
-            <a href="#" class="hover:text-orange-600">Roadmaps</a>
-            <a href="#" class="hover:text-orange-600">About Us</a>
-            <a href="#" class="hover:text-orange-600">Careers</a>
-            <a href="#" class="hover:text-orange-600">Contact</a>
-            <a href="#" class="hover:text-orange-600">Community</a>
-        </div>
-
-        <a href="#" class="items-center justify-center bg-brightRed px-4 rounded-full baseline font-bold hover:text-white hidden md:flex md:font-normal">Get Started</a>
-
-        <!-- menu list -->
-        <button id="menu-btn" class="fixed top-4 right-4 block hamburger md:hidden focus:outline-none">
-            <span class="hamburger-top"></span>
-            <span class="hamburger-middle"></span>
-            <span class="hamburger-bottom"></span>
-        </button>
-
-    </div>
-    <!-- mobile menu -->
-    <div class="md:hidden">
-        <div id="menu" class="absolute hidden flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shahow-md">
-            <a href="#" class="hover:text-orange-600">Roadmaps</a>
-            <a href="#" class="hover:text-orange-600">About Us</a>
-            <a href="#" class="hover:text-orange-600">Careers</a>
-            <a href="#" class="hover:text-orange-600">Contact</a>
-            <a href="#" class="hover:text-orange-600">Community</a>
-        </div>
     </nav>
 
     <!-- hero sec -->
@@ -60,10 +71,16 @@
 
             <!-- left   -->
             <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
-                <h1 class="max-w-md  text-3xl font-bold text-center md:text-6xl md:text-left">Join the journey of programming, learn & grow with us!</h1>
-                <p class="max-w-md text-lg text-center text-darkGrayishBlue md:text-left">Are you passionate about coding and want to learn new things? Do you want to collaborate with like-minded people and grow your skills? Join our programming club and be a part of a community that values knowledge and friendship.</p>
+                <h1 class="max-w-md  text-3xl font-bold text-center md:text-6xl md:text-left">Join the journey of
+                    programming, learn & grow with us!</h1>
+                <p class="max-w-md text-lg text-center text-darkGrayishBlue md:text-left">Are you passionate about
+                    coding and want to learn new things? Do you want to collaborate with like-minded people and grow
+                    your skills? Join our programming club and be a part of a community that values knowledge and
+                    friendship.</p>
                 <div class="flex justify-center md:justify-start">
-                    <a href="#" class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-orange-500 md:block">Sign Up!</a>
+                    <a href="#"
+                        class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-orange-500 md:block">Sign
+                        Up!</a>
                 </div>
             </div>
 
@@ -81,16 +98,17 @@
             <!-- what now -->
             <div class="flex flex-col space-y-12 md:w-1/2">
                 <h2 class="max-w-md text-3xl md:text-6xl font-bold text-center md:text-left">How to join?</h2>
-                <p class="max-w-sm text-center text-blue-950 md:text-left">We have a few steps to help you get started.</p>
+                <p class="max-w-sm text-center text-blue-950 md:text-left">We have a few steps to help you get started.
+                </p>
             </div>
 
             <!-- numbered list -->
             <div class="flex flex-col space-y-8 md:w-1/2">
-                
+
                 <!-- list 1 -->
                 <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
                     <!-- heading -->
-                    <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+                    <div class="rounded-full bg-brightRedSupLight md:bg-transparent">
 
                         <div class="flex items-center space-x-2">
                             <div class="px-4 py-2 text-white rounded-full md:py-2 bg-brightRed">01</div>
@@ -101,14 +119,15 @@
                     <!-- for boro screen -->
                     <div class="">
                         <h3 class="hidden mb-4 text-lg font-bold md:block">Contact a member of club</h3>
-                        <p class="text-blue-900 hidden mb-4 font-bold md:block">Here is where you can contact a member of our programming club.</p>
+                        <p class="text-blue-900 hidden mb-4 font-bold md:block">Here is where you can contact a member
+                            of our programming club.</p>
                     </div>
                 </div>
 
                 <!-- list 2 -->
                 <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
                     <!-- heading -->
-                    <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+                    <div class="rounded-full bg-brightRedSupLight md:bg-transparent">
 
                         <div class="flex items-center space-x-2">
                             <div class="px-4 py-2 text-white rounded-full md:py-2 bg-brightRed">02</div>
@@ -119,14 +138,15 @@
                     <!-- for boro screen -->
                     <div class="">
                         <h3 class="hidden mb-4 text-lg font-bold md:block">Fill the registration form</h3>
-                        <p class="text-blue-900 hidden mb-4 font-bold md:block">You need to fill up the registration form via online form or a physical form</p>
+                        <p class="text-blue-900 hidden mb-4 font-bold md:block">You need to fill up the registration
+                            form via online form or a physical form</p>
                     </div>
                 </div>
 
                 <!-- list 3 -->
                 <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
                     <!-- heading -->
-                    <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+                    <div class="rounded-full bg-brightRedSupLight md:bg-transparent">
 
                         <div class="flex items-center space-x-2">
                             <div class="px-4 py-2 text-white rounded-full md:py-2 bg-brightRed">03</div>
@@ -137,7 +157,8 @@
                     <!-- for boro screen -->
                     <div class="">
                         <h3 class="hidden mb-4 text-lg font-bold md:block">Make a pair with a member</h3>
-                        <p class="text-blue-900 hidden mb-4 font-bold md:block">Contact a member of our programming club. Then you can make a pair with a member</p>
+                        <p class="text-blue-900 hidden mb-4 font-bold md:block">Contact a member of our programming
+                            club. Then you can make a pair with a member</p>
                     </div>
                 </div>
             </div>
@@ -159,45 +180,54 @@
                 <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3">
                     <img src="./images/cpccu-peoples/tarikul.jpg" alt="" class="w-16 -mt-14 rounded-3xl">
                     <h4 class="text-lg font-bold">Tarikul Islam</h4>
-                    <p class="text-sm text-darkGrayishBlue">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p class="text-sm text-darkGrayishBlue">"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
 
-                
+
                 <!-- testimonial 2 -->
                 <div class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:flex md:w-1/3">
                     <img src="./images/cpccu-peoples/boni.jpg" alt="" class="w-16 -mt-14 rounded-3xl">
                     <h4 class="text-lg font-bold">Boni Yeamin Laju</h4>
-                    <p class="text-sm text-darkGrayishBlue">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p class="text-sm text-darkGrayishBlue">"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
 
-                
+
                 <!-- testimonial 3 -->
                 <div class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:flex md:w-1/3">
                     <img src="./images/cpccu-peoples/zubayer.jpeg" alt="" class="w-16 -mt-14 rounded-3xl">
                     <h4 class="text-lg font-bold">Zubayer Bin Ayub</h4>
-                    <p class="text-sm text-darkGrayishBlue">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p class="text-sm text-darkGrayishBlue">"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
             </div>
 
             <!-- button for change -->
             <div class="p-2 m-2 flex justify-center items-center">
-                <a href="#" class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-orange-500 md:block">Meet them!</a>
+                <a href="#"
+                    class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-orange-500 md:block">Meet
+                    them!</a>
             </div>
         </div>
     </section>
-    
+
     <!-- red section -->
     <section id="red" class="bd-brightRed">
 
         <!-- flex container -->
-        <div class="container flex flex-col items-center justify-between px-6 py-24 mx-auto bg-brightRed rounded-3xl space-y-12 md:py-12 md:flex-row md:space-y-0">
+        <div
+            class="container flex flex-col items-center justify-between px-6 py-24 mx-auto bg-brightRed rounded-3xl space-y-12 md:py-12 md:flex-row md:space-y-0">
             <!-- heading -->
-            <h2 class="text-2xl font-bold leading-tight text-center text-white md:text-4xl md:max-w-xl md:text-left">Ready to build your community?</h2>
+            <h2 class="text-2xl font-bold leading-tight text-center text-white md:text-4xl md:max-w-xl md:text-left">
+                Ready to build your community?</h2>
 
             <!-- button -->
             <div class="">
 
-                <a href="#" class="p-3 px-6 bg-black text-white rounded-full self-baseline  shadow-2xl text-lg font-semibold hover:text-brightRed">Get Started</a>
+                <a href="#"
+                    class="p-3 px-6 bg-black text-white rounded-full self-baseline  shadow-2xl text-lg font-semibold hover:text-brightRed">Get
+                    Started</a>
 
             </div>
         </div>
@@ -206,10 +236,12 @@
     <!-- footer -->
     <footer class="bg-veryDarkBlue mt-10">
         <!-- flex container -->
-        <div class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
+        <div
+            class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
 
             <!-- logo and social links container -->
-            <div class="flex flex-col-reverse items-center justify-between px-6 space-y-12 md:flex-col md:space-y-5 md:items start">
+            <div
+                class="flex flex-col-reverse items-center justify-between px-6 space-y-12 md:flex-col md:space-y-5 md:items start">
                 <div class="mx-auto my-6 text-center text-white md:hidden">
                     Copyright &copy; 2022 CPCCU || City University Bangladesh
                 </div>
@@ -221,9 +253,11 @@
                 <!-- social links -->
                 <div class="flex justify-center space-x-4">
                     <!-- linkedin -->
-                    <a href="https://www.linkedin.com/groups/14380055/"><img src="images/logos/linkedin.png" alt="" class="h-8"></a>
+                    <a href="https://www.linkedin.com/groups/14380055/"><img src="images/logos/linkedin.png" alt=""
+                            class="h-8"></a>
                     <!-- facebook -->
-                    <a href="https://www.facebook.com/groups/cpccu/"><img src="images/logos/facebook.png" alt="" class="h-8"></a>
+                    <a href="https://www.facebook.com/groups/cpccu/"><img src="images/logos/facebook.png" alt=""
+                            class="h-8"></a>
                     <!-- github -->
                     <a href="https://github.com/cpccu"><img src="images/logos/github.png" alt="" class="h-8"></a>
                     <!-- youtube -->
@@ -232,7 +266,7 @@
             </div>
 
             <!-- list container -->
-            <div class="flex justtify-center items-center right-10 space-x-32">
+            <div class="flex justify-center items-center space-x-32">
                 <div class="flex flex-col space-y-3 justtify-center items-center text-white">
                     <a href="#" class="hover:text-brightRed">Home</a>
                     <a href="#" class="hover:text-brightRed">Roadmaps</a>
@@ -254,13 +288,15 @@
                     <form action="">
                         <div class="flex space-x-3">
                             <input type="text" class="flex-1 px-4 rounded-full focus:outline-none" placeholder="Search">
-                            <button class="px-6 py-2 text-white rounded-full bg-brightRed hover:bg-orange-500 focus:outline-none">Go</button>
+                            <button
+                                class="px-6 py-2 text-white rounded-full bg-brightRed hover:bg-orange-500 focus:outline-none">Go</button>
                         </div>
                     </form>
 
                 </div>
 
-                <div class="hidden text-white md:block md:justify-center md:items-center">Copyright &copy; 2022 CPCCU || City University Bangladesh</div>
+                <div class="hidden text-white md:block md:justify-center md:items-center">Copyright &copy; 2022 CPCCU ||
+                    City University Bangladesh</div>
             </div>
 
         </div>
@@ -269,4 +305,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

@@ -10,6 +10,12 @@ body{
     background-position: 90% -25%;
 }
 
+@media(max-width: 576px) {
+  body{
+    background-position: 50px;
+    background-size: 500px;
+  }
+}
 /* Hamburger Menu */
 .hamburger {
     cursor: pointer;
