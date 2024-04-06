@@ -32,7 +32,25 @@
             <a href="#" class="hover:text-orange-600">Community</a>
         </div>
 
-        <a href="#" class="flex items-center justify-center bg-brightRed px-4 rounded-full baseline font-bold hover:text-white md:font-normal">Get Started</a>
+        <a href="#" class="items-center justify-center bg-brightRed px-4 rounded-full baseline font-bold hover:text-white hidden md:flex md:font-normal">Get Started</a>
+
+        <!-- menu list -->
+        <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+        </button>
+
+    </div>
+    <!-- mobile menu -->
+    <div class="md:hidden">
+        <div id="menu" class="absolute hidden flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shahow-md">
+            <a href="#" class="hover:text-orange-600">Roadmaps</a>
+            <a href="#" class="hover:text-orange-600">About Us</a>
+            <a href="#" class="hover:text-orange-600">Careers</a>
+            <a href="#" class="hover:text-orange-600">Contact</a>
+            <a href="#" class="hover:text-orange-600">Community</a>
+        </div>
     </nav>
 
     <!-- hero sec -->
@@ -42,7 +60,7 @@
 
             <!-- left   -->
             <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
-                <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left">Join the journey of programming, learn & grow with us!</h1>
+                <h1 class="max-w-md  text-3xl font-bold text-center md:text-6xl md:text-left">Join the journey of programming, learn & grow with us!</h1>
                 <p class="max-w-md text-lg text-center text-darkGrayishBlue md:text-left">Are you passionate about coding and want to learn new things? Do you want to collaborate with like-minded people and grow your skills? Join our programming club and be a part of a community that values knowledge and friendship.</p>
                 <div class="flex justify-center md:justify-start">
                     <a href="#" class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-orange-500 md:block">Sign Up!</a>
@@ -62,7 +80,7 @@
 
             <!-- what now -->
             <div class="flex flex-col space-y-12 md:w-1/2">
-                <h2 class="max-w-md md:text-6xl font-bold text-center md:text-left">How to join?</h2>
+                <h2 class="max-w-md text-3xl md:text-6xl font-bold text-center md:text-left">How to join?</h2>
                 <p class="max-w-sm text-center text-blue-950 md:text-left">We have a few steps to help you get started.</p>
             </div>
 
@@ -129,13 +147,13 @@
     <!-- testimonials -->
     <section class="testimonials">
         <!-- container to heading and testimonial blocks -->
-        <div class="max-w-6xl px-5 mx-auto mt-32 text-center">
+        <div class="max-w-6xl px-5 mx-auto text-center">
 
             <!-- heading -->
             <h2 class="text-4xl font-bold text-center">Testimonials</h2>
 
             <!-- testimonial blocks -->
-            <div class="flex flex-col mt-24 md:flex-row md:space-x-6">
+            <div class="flex flex-col mt-10 md:flex-row md:space-x-6">
 
                 <!-- testimonial 1 -->
                 <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3">
@@ -174,7 +192,7 @@
         <!-- flex container -->
         <div class="container flex flex-col items-center justify-between px-6 py-24 mx-auto bg-brightRed rounded-3xl space-y-12 md:py-12 md:flex-row md:space-y-0">
             <!-- heading -->
-            <h2 class="text-5xl font-bold leading-tight text center text-white md:text-4xl md:max-w-xl md:text-left">Ready to build your community?</h2>
+            <h2 class="text-2xl font-bold leading-tight text-center text-white md:text-4xl md:max-w-xl md:text-left">Ready to build your community?</h2>
 
             <!-- button -->
             <div class="">
@@ -246,6 +264,6 @@
 
     </footer>
 
-    
+    <script src="script.js"></script>
 </body>
 </html>
