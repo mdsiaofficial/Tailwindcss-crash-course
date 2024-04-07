@@ -20,7 +20,16 @@ module.exports = {
         veryDarkBlue: 'hsl(233, 12%, 13%)',
         veryPaleRed: 'hsl(13, 100%, 96%)',
         veryLightGray: 'hsl(0, 0%, 98%)',
-      }
+      },
+      fontFamily: {
+        'poppins': ['Poppins', 'sans-serif'],
+        'open-sans': ['Open Sans', 'sans-serif'],
+        'inter': ['Inter', 'sans-serif'],
+        'roboto': ['Roboto', 'sans-serif'],
+        'lexend': ['Lexend', 'sans-serif'],
+        'nunito': ['Nunito', 'sans-serif'],
+        'dancing': ['Dancing Script', 'cursive'],
+      },
     },
   },
   plugins: [],

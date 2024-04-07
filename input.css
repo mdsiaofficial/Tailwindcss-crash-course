@@ -22,8 +22,8 @@ body {
 /* Hamburger Menu */
 .hamburger {
   cursor: pointer;
-  width: 24px;
-  height: 24px;
+  width: 27px;
+  height: 27px;
   transition: all 0.25s;
   position: relative;
 }
@@ -34,7 +34,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 24px;
+  width: 27px;
   height: 2px;
   background: white;
   transform: rotate(0);
